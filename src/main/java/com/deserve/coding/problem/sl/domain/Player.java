@@ -1,17 +1,14 @@
 package com.deserve.coding.problem.sl.domain;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @AllArgsConstructor
-public class Board {
-
-    private int size;
-    private int playerPosition; // Hashmap can be created for multiple players.
-
-
+public class Player {
+    private String name;
+    private String id;
 }
