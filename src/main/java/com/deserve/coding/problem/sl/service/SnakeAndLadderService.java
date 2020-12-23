@@ -12,9 +12,7 @@ public class SnakeAndLadderService {
     public void movePlayer(int positions) {
         int oldPosition = board.getPlayerPosition();
         int newPosition = oldPosition + positions;
-
         int boardSize = board.getSize();
-
         if(newPosition > boardSize) newPosition = oldPosition;
         else newPosition = getNewPositionWithSnakes(newPosition);
         board.setPlayerPosition(newPosition);
